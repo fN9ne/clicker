@@ -1,0 +1,87 @@
+﻿<!doctype html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="img/favicon.ico" sizes="16x16 32x32 64x64 128x128" type="image/vnd.microsoft.icon">
+		<title>Ещё один кликер</title>
+		<link rel="stylesheet" href="css/null.css">
+		<link rel="stylesheet" href="css/fonts.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600;700&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div class="offline-alert">
+			<div class="offline-alert__bg"></div>
+			<div class="offline-alert__close offline-alert__button">&times;</div>
+			<div class="offline-alert__detail offline-alert__button">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M54.63 246.6L192 109.3l137.4 137.4C335.6 252.9 343.8 256 352 256s16.38-3.125 22.62-9.375c12.5-12.5 12.5-32.75 0-45.25l-160-160c-12.5-12.5-32.75-12.5-45.25 0l-160 160c-12.5 12.5-12.5 32.75 0 45.25S42.13 259.1 54.63 246.6zM214.6 233.4c-12.5-12.5-32.75-12.5-45.25 0l-160 160c-12.5 12.5-12.5 32.75 0 45.25s32.75 12.5 45.25 0L192 301.3l137.4 137.4C335.6 444.9 343.8 448 352 448s16.38-3.125 22.62-9.375c12.5-12.5 12.5-32.75 0-45.25L214.6 233.4z"/></svg>
+			</div>
+			<div class="offline-alert__info">
+				<h2>Damage given:</h2>
+				<p id="inactive_dmg">23.439</p>
+			</div>
+			<div class="offline-alert__wrapper">
+				<h2>Offline time:</h2>
+				<div class="offline-alert__content">
+					<div class="offline-alert__col">
+						<div class="offline-alert__num" id="hours"></div>
+						<div class="offline-alert__label">hour</div>
+					</div>
+					<div class="offline-alert__col">
+						<div class="offline-alert__num" id="minutes"></div>
+						<div class="offline-alert__label">min</div>
+					</div>
+					<div class="offline-alert__col">
+						<div class="offline-alert__num" id="seconds"></div>
+						<div class="offline-alert__label">sec</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="wrapper">
+			<ul class="statistic">
+				<li class="statistic__item">
+					<div class="statistic__prop">Money:</div>
+					<div class="statistic__value" id="cash">0</div>
+				</li>
+				<li class="statistic__item">
+					<div class="statistic__prop">Damage:</div>
+					<div class="statistic__value" id="dmg">1</div>
+				</li>
+				<li class="statistic__item">
+					<div class="statistic__prop">Auto Damage:</div>
+					<div class="statistic__value" id="dps">0</div>
+				</li>
+				<div class="clear">Clear</div>
+			</ul>
+			<header class="header">
+				<nav class="header-menu">
+					<ul class="header-menu__list">
+						<li class="header-menu__item">
+							<a href="index.html" class="header-menu__link">Home</a>
+						</li>
+						<li class="header-menu__item">
+							<a href="shop.html" class="header-menu__link">Shop</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<div class="health">
+				<div class="health__count">
+					<span id="current">10</span>
+					<span>/</span>
+					<span id="max">10</span>
+				</div>
+				<div class="health__bar">
+					<span></span>
+				</div>
+			</div>
+			<button>Click me!</button>
+		</div>
+		<script src="js/main.js"></script>
+	</body>
+	</html>

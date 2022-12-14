@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="img/favicon.ico" sizes="16x16 32x32 64x64 128x128" type="image/vnd.microsoft.icon">
+		<title>Ещё один магазин, ещё одного кликера</title>
+		<link rel="stylesheet" href="css/null.css">
+		<link rel="stylesheet" href="css/fonts.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<ul class="statistic">
+				<li class="statistic__item">
+					<div class="statistic__prop">Money:</div>
+					<div class="statistic__value" id="cash">0</div>
+				</li>
+				<li class="statistic__item">
+					<div class="statistic__prop">Damage:</div>
+					<div class="statistic__value" id="dmg">1</div>
+				</li>
+				<li class="statistic__item">
+					<div class="statistic__prop">Auto Damage:</div>
+					<div class="statistic__value" id="dps">0</div>
+				</li>
+			</ul>
+			<header class="header">
+				<nav class="header-menu">
+					<ul class="header-menu__list">
+						<li class="header-menu__item">
+							<a href="index.html" class="header-menu__link">Home</a>
+						</li>
+						<li class="header-menu__item">
+							<a href="shop.html" class="header-menu__link">Shop</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<section class="shop">
+				<div class="shop__item" id="dmginc">
+					<div class="shop__prop">+1 Damage</div>
+					<div class="shop__val">Cost: 1 Money</div>
+				</div>
+				<div class="shop__item" id="dpsinc">
+					<div class="shop__prop">+1 Auto Damage</div>
+					<div class="shop__val">Cost: 3 Money</div>
+				</div>
+			</section>
+		</div>
+		<script src="js/shop.js"></script>
+	</body>
+</html>
